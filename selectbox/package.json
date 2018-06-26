@@ -2,7 +2,7 @@
   "name": "vuetemplate",
   "version": "1.0.0",
   "description": "A Quasar Framework app",
-  "productName": "Chat",
+  "productName": "selectbox",
   "cordovaId": "org.cordova.quasar.app",
   "author": "NEWGEN\\arushi-jain <arushi-jain@newgen.co.in>",
   "private": true,
