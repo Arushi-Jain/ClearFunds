@@ -1,12 +1,11 @@
 <template>
-  <q-page class="flex flex-center">
+  <div class="flex flex-center">
     <q-select
       v-model="select"
       float-label="Is Quasar Awesome?"
-      radio
      :options="selectOptions"
     ><q-search v-model="searchModel"></q-search></q-select>
-  </q-page>
+  </div>
 </template>
 
 <style>
