@@ -1,10 +1,20 @@
 <template>
-  <div class="flex flex-center">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
     <q-select
       v-model="select"
-      float-label="Is Quasar Awesome?"
+      inverted-light
+      color="grey-4"
+      filter="true"
+      autofocus-filter="true"
+      filter-placeholder= "Search"
+      separator
+      display-value="Select..."
+      static-label="Is Quasar Awesome?"
      :options="selectOptions"
-    ><q-search v-model="searchModel"></q-search></q-select>
+    ></q-select>
+    </div>
   </div>
 </template>
 
@@ -16,18 +26,7 @@ export default {
   name: 'PageIndex',
   data () {
     return {
-      searchModel: '',
-      select: 'fb',
-      selectOptions: [
-        {
-          label: 'Google',
-          value: 'goog'
-        },
-        {
-          label: 'Facebook',
-          value: 'fb'
-        }
-      ]
+      selectOptions: [ { label: 'Option One', value: 'one' }, { label: 'Option Two', value: 'two' }, { label: 'Option Three', value: 'three' } ]
     }
   }
 }
