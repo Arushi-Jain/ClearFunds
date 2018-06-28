@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-sm-4">{{this.selected}}</div>
+    <div class="col-sm-4">The selected values are stored here {{this.selected}}</div>
     <div class="col-sm-4">
     <q-select
       v-model="select"
