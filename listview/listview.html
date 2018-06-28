@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>List View</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <div>
-    <ul style="list-style-type:none">
-            FILTERS
-        <li>New Questions</li>
-        <li>Most Upvoted</li>
-        <li>Bookmarked Questions</li>
-        <li>Unanswered Questions</li>
-      </ul>  
-      <div>      
+    <select multiple>
+            <option >New Questions</option>
+            <option >Most Upvoted</option>
+            <option >Bookmarked Questions</option>
+            <option >Unanswered Questions</option>
+        </select>
+    </div>      
 </body>
 <style>
 @media (min-width:320px)  {  #primary { width:67%; }  #secondary { width:30%; margin-left:3%;}   }
@@ -40,14 +37,15 @@
         padding-left: 285px;
         padding-right: 250px;
     }
-    ul {
-        background-color: #80808075;
+select{
+    overflow: auto;
+    background-color: #80808075;
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
 }
-li{
+option {
     display: block;
     color: black;
     text-align: left;
@@ -55,10 +53,10 @@ li{
     background-color: white;
     text-decoration: none;
     border: 1px solid #8080808f;
+}   
+option:checked {
+    
 }
 
-li a:hover {
-    background-color: #111111;
-}
-    </style>
+</style>
 </html>
