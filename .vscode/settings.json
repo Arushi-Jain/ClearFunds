@@ -8,5 +8,6 @@
         "javascriptreact",
         "vue"
     ],
-    "eslint.workingDirectories": []
+    "eslint.workingDirectories": [],
+    "git.ignoreLimitWarning": true
 }
